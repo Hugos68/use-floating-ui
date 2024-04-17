@@ -18,8 +18,8 @@ export function useFloating(options: ComputePositionConfig = {}) {
 			return;
 		}
 		const position = await computePosition(referenceEl, floatingEl, options);
-		floatingEl.style.x = `${position.x}px`;
-		floatingEl.style.y = `${position.y}px`;
+		floatingEl.style.left = `${position.x}px`;
+		floatingEl.style.top = `${position.y}px`;
 	}
 
 	/* Lifecycle */

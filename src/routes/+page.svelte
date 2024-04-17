@@ -5,12 +5,13 @@
 </script>
 
 <section class="container">
-    <button use:context.reference={'hover'}>Reference</button>
+    <button use:context.reference={'click'}>Reference</button>
 
-
-    <div class="floating" use:context.floating>
-    <p>Tooltip!</p>
-    </div>
+    {#if context.show}
+        <div class="floating" use:context.floating>
+            <p>Tooltip!</p>
+        </div>
+    {/if}
 </section>
 
 <style> 
