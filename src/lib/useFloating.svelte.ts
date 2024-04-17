@@ -36,7 +36,6 @@ export function useFloating(options: ComputePositionConfig = {}) {
 
 		function handleMouseEnter() {
 			if (behavior === 'hover') {
-				console.log('hover');
 				show = true;
 			}
 		}
