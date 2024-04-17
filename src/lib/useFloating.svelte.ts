@@ -12,7 +12,7 @@ export function useFloating(options: ComputePositionConfig = {}) {
 	let referenceEl = $state<HTMLElement | null>(null);
 	let show = $state(false);
 
-	/* Function */
+	/* Functions */
 	async function updatePosition() {
 		if (referenceEl === null || floatingEl === null) {
 			return;
